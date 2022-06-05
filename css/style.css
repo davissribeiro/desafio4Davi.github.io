@@ -1,0 +1,421 @@
+/* Aplicação da fonte para a página */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+input, select, textarea, button{
+    font-family: inherit;
+}
+
+/* Estilo do cabeçalho */
+.cabecalho{
+    background-color: #FEFEFE;
+    overflow: hidden;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+.cabecalho h1 img{
+    float: left;
+    width: 200px;
+}
+nav ul{
+    text-align: center;
+    margin-top: calc((83.12px - 32px) / 2);
+    margin-right: 200px;
+}
+nav li{
+    display: inline;
+    margin-right: 2em;
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    color: #1351d8;
+    transition: 0.5s all;
+}
+nav a:hover{
+    color: #1b357e;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+/* Estilo da página Home */
+.home{
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    position: relative;
+}
+.home img{
+    width: 100%;
+    background-color: black;
+}
+.caixaDescricaoCarrossel{
+    background-color: black;
+    opacity: 0.9;
+    width: 100%;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.descricaoCarrossel{
+    display: inline;
+    font-size: 1em;
+    color: white;
+}
+.descricaoCarrossel a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 2px;
+    color: #1351d8;
+    font-weight: bold;
+}
+.descricaoCarrossel a:hover{
+    transform: scale(1.05);
+}
+
+/* Estilo do rodapé */
+.rodape{
+    background-color: #1b357e;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+.rodape p{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 1em;
+    vertical-align: top;
+    margin-top: calc((50px - 16px) / 2);
+}
+.links{
+    display: inline-block;
+}
+.links li{
+    display: inline;
+    margin-right: 1em;
+}
+.links img{
+    width: 50px;
+}
+.links img:hover{
+    transform: scale(1.1);
+}
+.logoRodape{
+    float: right;
+    height: 50px;
+}
+
+/* Estilo da página Lançamento */
+.conteudoLancamento{
+    margin-bottom: 130px;
+}
+
+.videoLancamento{
+    text-align: center;
+}
+.videoLancamento p{
+    font-size: 1em;
+    margin: 1em 0 2em 0;
+}
+
+.divMensagemComparacao{
+    display: none;
+    width: 100%;
+    padding: 15px 0;
+    background-color:red;
+}
+.divMensagemComparacao span{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: white; 
+}
+
+.conjuntoModelos{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.modelos{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: top;
+}
+.modelos > :first-child{
+    width: 100%;
+    margin-top: 20px;
+}
+.informacao{
+    width: 90%;
+    margin: 1em auto;
+}
+.informacao label{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    cursor: pointer;
+}
+.informacao input{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.informacao ul{
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+    margin-left: 1em;
+}
+.informacao ul > :first-child{
+    color: #1351d8;
+}
+.informacao ul li{
+    font-size: 1em;
+}
+.informacao > :last-child{
+    width: 2.5em ;
+}
+.botao{
+    text-align: center;
+}
+.botao input{
+    background-color: #1351d8;
+    padding: 1em;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.botao input:hover{
+    transform: scale(1.1);
+}
+
+.janelaComparar{
+    display: none;
+    position: fixed;
+    top: 2.5%;
+    left: 10%;
+    width: 80%;
+    height: 95%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.janelaComparar table{
+    width: 80%;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+.janelaComparar td{
+    padding: 10px;
+    width: 33%;
+    font-size: 1em;
+}
+.janelaComparar td:first-child{
+    font-weight: bold;
+}
+.janelaComparar tr:nth-child(even){
+    background-color: #f2f2f2;;
+}
+.janelaComparar img{
+    width: 100%;
+}
+
+/* Estilo da página contato */
+
+.divMensagemEnvio{
+    width: 100%;
+    padding: 15px 0;
+}
+.divMensagemEnvioCerto{
+    background-color:#1351d8;
+}
+.divMensagemEnvioErro{
+    background-color:red;
+}
+.divMensagemEnvio span{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: white; 
+}
+.conjuntoFormulario{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 115px;
+}
+.conjuntoFormulario img{
+    width: 35%;
+}
+.conjuntoFormulario form{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+.conjuntoFormulario form h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+}
+.conjuntoFormulario form  > input, .conjuntoFormulario form select, .conjuntoFormulario form textarea{
+    display: block;
+    margin-top: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5em;
+    font-size: 0.9em;   
+}
+.conjuntoFormulario form > input::placeholder, .conjuntoFormulario form select, .conjuntoFormulario form textarea::placeholder{
+    text-transform: uppercase;
+}
+.botaoEnviar{
+    text-align: right;
+    margin-top: 1.5em;
+    width: 100%;
+}
+.botaoEnviar input{
+    display: inline-block;
+    width: 55%;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    background-color: #1351d8;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.botaoEnviar input:hover{
+    transform: scale(1.1);
+    background-color:#1b357e;
+}
+
+/* Estilização para telas menores e mobile */
+
+@media (max-width:1100px) {
+    
+/* Cabeçalho */
+
+nav ul{
+    margin-right: 0px;
+}
+nav li{
+    margin-right: 1em;
+}
+nav a{
+    font-size: 1.3em;
+}
+
+/* Página Lançamento */
+.videoLancamento p{
+    margin: 1em 0;
+}
+.modelos{
+    width: 60%;
+    margin: 0;
+    margin-bottom: 1em;
+}
+.botaoComparar{
+    margin-top: 1em;
+}
+.botaoComparar input{
+    width: 70%;
+}
+
+/* Página Contato */
+.conjuntoFormulario img{
+    width: 45%;
+}
+.conjuntoFormulario form{
+    width: 35%;
+}
+}
+
+@media screen and (max-width:580px) {
+
+/* Cabeçalho */
+
+nav ul{
+    margin: 0px;
+    text-align: right;
+}
+nav li{
+    display: block;
+    margin: 0;
+    margin-top: 0.5em;
+}
+nav a{
+    font-size: 1.2em;
+}
+
+/* Rodapé */
+
+.rodape p{
+    display: block;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+/* Página home */
+.home img{
+    width: 100%;
+}
+
+/* Página Lançamento */
+.videoLancamento iframe{
+    height: 200px;
+}
+.videoLancamento p{
+    margin: 0.5em 0;
+}
+.modelos{
+    width: 90%;
+    margin: 0;
+    margin-bottom: 1em;
+}
+.botaoComparar{
+    margin-top: 1em;
+}
+.botaoComparar input{
+    width: 70%;
+}
+
+/* Página Contato */
+
+.conjuntoFormulario{
+    text-align: left;
+    padding: 2em;
+    margin: 0 auto;
+    margin-bottom: 115px;
+}
+.conjuntoFormulario img{
+    width: 0px;
+}
+.conjuntoFormulario form{
+    width: 100%;
+}
+.conjuntoFormulario form  > input, .conjuntoFormulario form select, .conjuntoFormulario form textarea{
+    border: 0.1em solid black;
+}
+}

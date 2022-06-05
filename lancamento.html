@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/Carro.js"></script>
+
+    <title>Ford - Lançamento</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <h1><img src="img/logo-ford-256.png" alt="Logo Ford"></h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lancamento.html">Lançamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteudoLancamento">
+            <div class="videoLancamento">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/vQsryuNmsL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <p>Nova Ford Ranger 2022, mais poder do que nunca</p>
+            </div>
+    
+            <div id="mensagemComparacao" class="divMensagemComparacao"></div>
+    
+            <div>
+                <ul class="conjuntoModelos">
+                    <li class="modelos">
+                        <img src="img/XL_Cabine.jpg" alt="Ranger modelo XL Cabine">
+                        
+                        <div class="informacao">
+                            <label>
+                                <input type="checkbox" onchange="Carro.prepararComparacao(this,new Carro ('img/XL_Cabine.jpg', 'XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 183850))">
+        
+                                <ul>
+                                    <li>XL Cabine Simples 2.2 Diesel 4x4 MT 2022</li>
+                                    <li>A partir de R$ 183.850</li>
+                                </ul>
+                            </label>
+                            
+                            <img src="img/info.png" alt="Ícone de informação sobre o veículo">
+                        </div>
+                    </li>
+    
+                    <li class="modelos">
+                        <img src="img/xls_2.2_diesel.jpg" alt="Ranger modelo XLS">
+                        
+                        <div class="informacao">
+                            <label>
+                                <input type="checkbox" onchange="Carro.prepararComparacao(this,new Carro ('img/xls_2.2_diesel.jpg', 'XLS 2.2 Diesel 4X4 AT 2022', 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 220690))">
+        
+                                <ul>
+                                    <li>XLS 2.2 Diesel 4x4 AT 2022</li>
+                                    <li>A partir de R$ 220.690</li>
+                                </ul>
+                            </label>
+                            
+                            <img src="img/info.png" alt="Ícone de informação sobre o veículo">
+                        </div>
+                    </li>
+    
+                    <li class="modelos">
+                        <img src="img/storm.jpg" alt="Ranger modelo Storm">
+                        
+                        <div class="informacao">
+                            <label>
+                                <input type="checkbox" onchange="Carro.prepararComparacao(this,new Carro ('img/storm.jpg', 'Storm 3.2 Diesel 4X4 AT 2022', 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 222790))">
+        
+                                <ul>
+                                    <li>Storm 3.2 Diesel 4.4 AT 2022</li>
+                                    <li>A partir de R$ 222.790</li>
+                                </ul>
+                            </label>
+        
+                            <img src="img/info.png" alt="Ícone de informação sobre o veículo">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="botao">
+                <input type="button" value="Comparar Carro" id="botaoComparar" onclick="Carro.abrirJanela()">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p>Redes Sociais -</p>
+
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.facebook.com/FordBrasil/"><img src="img/facebook-50.png" alt="Logo Facebook levando para a página da Ford"></a></li>
+                    <li><a href="https://www.youtube.com/user/fordbrasil"><img src="img/youtube-squared-50.png" alt="Logo YouTube levando para a página da Ford"></a></li>
+                    <li><a href="https://www.instagram.com/fordbrasil/"><img src="img/instagram-logo-50.png" alt="Logo Instagram levando para a página da Ford"></a></li>
+                </ul>
+            </div>
+
+            <img class="logoRodape" src="img/ford-96.png" alt="Logo copyright Ford">
+        </div>
+    </footer>
+
+    <div id="janelaComparar" class="janelaComparar">
+        <table>
+            <tbody>
+                <tr >
+                <td></td>
+                <td id="compare_image_0" class="tabela_0">a</td>
+                <td id="compare_image_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td>Modelo</td>
+                <td id="compare_modelo_0" class="tabela_0">a</td>
+                <td id="compare_modelo_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td>Altura da caçamba (mm)</td>
+                <td id="compare_alturacacamba_0" class="tabela_0">a</td>
+                <td id="compare_alturacacamba_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td >Altura do veículo (mm)</td>
+                <td id="compare_alturaveiculo_0" class="tabela_0">a</td>
+                <td id="compare_alturaveiculo_1" class="tabela_1">a</td>
+                </tr>
+                <tr>
+                <td>Altura livre do solo (mm)</td>
+                <td id="compare_alturasolo_0" class="tabela_0">a</td>
+                <td id="compare_alturasolo_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td >Capacidade de carga (Kg)</td>
+                <td id="compare_capacidadecarga_0" class="tabela_0">a</td>
+                <td id="compare_capacidadecarga_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td >Motor</td>
+                <td id="compare_motor_0" class="tabela_0">a</td>
+                <td id="compare_motor_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td >Potência (cv)</td>
+                <td id="compare_potencia_0" class="tabela_0">a</td>
+                <td id="compare_potencia_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td >Volume de caçamba (L)</td>
+                <td id="compare_volumecacamba_0" class="tabela_0">a</td>
+                <td id="compare_volumecacamba_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td >Roda</td>
+                <td id="compare_roda_0" class="tabela_0">a</td>
+                <td id="compare_roda_1" class="tabela_1">a</td>
+                </tr>
+                <tr >
+                <td >Preço</td>
+                <td id="compare_preco_0" class="tabela_0">a</td>
+                <td id="compare_preco_1" class="tabela_1">a</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        <div class="botao">
+            <input type="button" value="Fechar" id="botaoFechar" onclick="Carro.fecharJanela()">
+        </div>
+    </div>
+</body>
+</html>

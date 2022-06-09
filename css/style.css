@@ -277,7 +277,7 @@ nav a:hover{
     font-weight: bold;
     text-align: left;
 }
-.conjuntoFormulario form  > input, .conjuntoFormulario form select, .conjuntoFormulario form textarea{
+.conjuntoFormulario form  > input, .conjuntoFormulario form select{
     display: block;
     margin-top: 1.5em;
     width: 100%;
@@ -285,7 +285,7 @@ nav a:hover{
     padding: 0.5em;
     font-size: 0.9em;   
 }
-.conjuntoFormulario form > input::placeholder, .conjuntoFormulario form select, .conjuntoFormulario form textarea::placeholder{
+.conjuntoFormulario form > input::placeholder, .conjuntoFormulario form select{
     text-transform: uppercase;
 }
 .botaoEnviar{
@@ -336,10 +336,10 @@ nav a{
     margin: 0;
     margin-bottom: 1em;
 }
-.botaoComparar{
+.botao{
     margin-top: 1em;
 }
-.botaoComparar input{
+.botao input{
     width: 70%;
 }
 
@@ -378,8 +378,21 @@ nav a{
 }
 
 /* Página home */
-.home img{
+.home{
     width: 100%;
+}
+.caixaDescricaoCarrossel{
+    background-color: white;
+    opacity: 1;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+.descricaoCarrossel{
+    color: black;
+    font-size: 1.5em;
 }
 
 /* Página Lançamento */
@@ -394,11 +407,15 @@ nav a{
     margin: 0;
     margin-bottom: 1em;
 }
-.botaoComparar{
+.botao{
     margin-top: 1em;
 }
-.botaoComparar input{
+.botao input{
     width: 70%;
+}
+.janelaComparar{
+    left: 5%;
+    width: 90%;
 }
 
 /* Página Contato */
@@ -415,7 +432,7 @@ nav a{
 .conjuntoFormulario form{
     width: 100%;
 }
-.conjuntoFormulario form  > input, .conjuntoFormulario form select, .conjuntoFormulario form textarea{
+.conjuntoFormulario form  > input, .conjuntoFormulario form select{
     border: 0.1em solid black;
 }
 }

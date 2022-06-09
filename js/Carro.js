@@ -1,10 +1,3 @@
-//Pendente
-//Arrumar (claro)
-
-// Duvida
-//É correto manipular a arrey dentro dos metodos estaticos sem ter enviado a arrey por parametro?
-//A funcao tabelarCarros eh a melhor forma parar fazer esse procedimento interrogacao?
-
 let carroArr=[];
 
 class Carro{

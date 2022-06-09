@@ -37,7 +37,7 @@
         <div id="mensagemEnvio"></div>
         
         <div class="conjuntoFormulario">
-            <img src="img/xls 2.2 diesel.jpg" alt="Ranger modelo XLS">
+            <img src="img/xls_2.2_diesel.jpg" alt="Ranger modelo XLS">
         
             <form  id="formulario">
                 <h2>Sobre Você</h2>
@@ -46,19 +46,19 @@
 
                 <input type="email" id="campoEmail" placeholder="E-mail*">
 
+                <input type="text" id="campoCpf" placeholder="CPF*">
+
+                <input type="text" id="campoSobrenome" placeholder="Sobrenome*">
+
                 <input type="tel" id="campoTelefone" placeholder="Telefone*">
 
-                <select id="campoMotivo">
-                    <option value="" disabled selected>Motivo Contato*</option>
+                <select id="campoMetodo">
+                    <option value="" disabled selected>Como deseja ser contatado*</option>
                     
-                    <option value="0">Elogio</option>
+                    <option value="0">Telefone</option>
 
-                    <option value="1">Reclamação</option>
-
-                    <option value="2">Solicitação</option>
+                    <option value="1">E-mail</option>
                 </select>
-
-                <textarea cols="100%" rows="8" id="campoMensagem" placeholder="Mensagem*"></textarea>
 
                 <fieldset class="botaoEnviar">
                     <input type="submit" value="Enviar" id="botaoEnviarFormulario">
